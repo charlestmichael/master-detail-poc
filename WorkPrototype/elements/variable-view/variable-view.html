@@ -1,0 +1,53 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<dom-module id="variable-view">
+    <template>
+        <style>
+            td, th {
+                padding-right: 10px;
+            }
+            td {
+                text-align: center;
+            }
+        </style>
+        <table width="90%">
+            <caption style="font-size: 24pt;font-weight: bold;font-style:italic;color:darkgray">{{variableData.variableName}}</caption>
+            <tr>
+                <th>Lowest</th>
+                <th>Lower Quartile</th>
+                <th>Median</th>
+                <th>Upper Quartile</th>
+                <th>Highest</th>
+            </tr>
+            <tr>
+                <td>{{variableData.lowest}}</td>
+                <td>{{variableData.lowerQuartile}}</td>
+                <td>{{variableData.median}}</td>
+                <td>{{variableData.upperQuartile}}</td>
+                <td>{{variableData.highest}}</td>
+            </tr>
+            <tr>
+                <td colspan="5"><hr/></td>
+            </tr>
+            <tr>
+                <td colspan="5" style="text-align: center"><img style="width:50%;" src="../../grahics/boxplot2.jpg"> </td>
+            </tr>
+            <tr>
+                <td colspan="5"><hr/></td>
+            </tr>
+        </table>
+    </template>
+    <script>
+        Polymer({
+            is:'variable-view',
+            properties:{
+                variableData: {
+                    type:Object,
+                    notify:true
+                }
+            },
+            ready: function(){
+
+            }
+        })
+    </script>
+</dom-module>

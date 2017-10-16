@@ -1,0 +1,24 @@
+{
+  "name": "WorkPrototype",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "^2.1.1",
+    "iron-collapse": "^2.0.0",
+    "paper-elements": "^1.0.7"
+  },
+  "resolutions": {
+    "polymer": "1.9 - 2",
+    "webcomponentsjs": "^v1.0.2",
+    "iron-collapse": "^2.0.0"
+  }
+}
