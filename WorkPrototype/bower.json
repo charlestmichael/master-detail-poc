@@ -14,10 +14,10 @@
   "dependencies": {
     "polymer": "^2.1.1",
     "iron-collapse": "^2.0.0",
-    "paper-elements": "^1.0.7"
+    "paper-button": "^2.0.0"
   },
   "resolutions": {
-    "polymer": "1.9 - 2",
+    "polymer": "^2.1.1",
     "webcomponentsjs": "^v1.0.2",
     "iron-collapse": "^2.0.0"
   }

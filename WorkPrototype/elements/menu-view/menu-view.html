@@ -4,8 +4,10 @@
 <link rel="import" href="../../bower_components/paper-card/paper-card.html">
 <link rel="import" href="../../elements/variable-view/variable-view.html">
 <link rel="import" href="../../bower_components/paper-button/paper-button.html">
+<link rel="import" href="menu-view-styles.html">
 <dom-module id="menu-view">
     <template>
+        <style include="menu-view-styles" is="custom-style"></style>
         <template is="dom-if" if="{{showMenu}}">
             <div style="display:table;width:100%">
                 <div style="display: table-row">
@@ -16,7 +18,7 @@
                     <div style="display:table-cell;width:40%;vertical-align: top">
                         <template id="vars" is="dom-repeat" items="{{titles}}">
                             <div title-id="{{item.id}}"
-                                 style="width:330px;font-weight:bold;margin-bottom:2px;cursor:pointer;background: -webkit-linear-gradient(left, lightblue , cornflowerblue);"
+                                 class="titleStyle"
                                  on-tap="toggleItem">{{item.name}}
                             </div>
                             <iron-collapse class="icoll" id="{{item.id}}" opened="true">
@@ -42,7 +44,6 @@
                     </div>
                 </div>
             </div>
-
         </template>
     </template>
 </dom-module>

@@ -1,14 +1,8 @@
 <link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="./variable-view-styles.html">
 <dom-module id="variable-view">
     <template>
-        <style>
-            td, th {
-                padding-right: 10px;
-            }
-            td {
-                text-align: center;
-            }
-        </style>
+        <style include="variable-view-styles" is="custom-style"></style>
         <table width="90%">
             <caption style="font-size: 24pt;font-weight: bold;font-style:italic;color:darkgray">{{variableData.variableName}}</caption>
             <tr>
